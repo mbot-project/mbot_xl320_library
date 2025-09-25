@@ -1,5 +1,7 @@
 """
 Used to check the XL320 servo ID.
+Loop thru all possible IDs and ping each one.
+Run this script with sudo.
 """
 
 from dynamixel_sdk import *
@@ -7,7 +9,7 @@ from mbot_xl320_library import *
 
 def main():
     initialize_GPIO()
-    portHandler, packetHandler = initialize_gpio_handlers("/dev/ttyAMA10")
+    portHandler, packetHandler = initialize_gpio_handlers("/dev/ttyAMA0")
 
     open_port(portHandler)
     set_baudrate(portHandler, 1000000)
