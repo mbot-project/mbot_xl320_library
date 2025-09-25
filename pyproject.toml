@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mbot_xl320_library"                 # the package name that users install/import
+version = "0.1.0"
+description = "Control library for XL320 servos"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Shaw Sun", email = "xssun@umich.edu" }]
+dependencies = [
+  # "pyserial>=3.5",              # example, if you talk over serial
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["mbot_xl320_library*"]
