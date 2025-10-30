@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mbot_xl320_library"                 # the package name that users install/import
-version = "0.1.0"
+version = "1.0.0"
 description = "Control library for XL320 servos"
 readme = "README.md"
 requires-python = ">=3.9"
