@@ -1,6 +1,6 @@
 """
-Used to check the XL320 servo ID.
-Loop thru all possible IDs and ping each one.
+Used to change the XL320 servo ID.
+Duplicate ID will cause communication issues.
 Run this script with sudo.
 """
 

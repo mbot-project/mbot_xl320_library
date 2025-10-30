@@ -40,6 +40,10 @@ You are all set.
     cd ~/mbot_xl320_library/tests
     sudo python3 check_servo_id.py
     ```
+2. Avoid using an identical ID for multiple DYNAMIXEL. You may face communication failure or may not be able to detect DYNAMIXEL with an identical ID - [Source](https://emanual.robotis.com/docs/en/dxl/x/xl320/#id). Modify `change_servo_id.py` to change the ID.
+    ```bash
+    sudo python3 change_servo_id.py
+    ```
 2. We have 2 exmaples `tests/rotate_full_range.py` and `tests/rotate_in_circle.py`. You need to define the servo ID to use the 2 examples, and the IDs are the ones you obtain from the step 1.
     ```python3
     # defines the servo's ID
